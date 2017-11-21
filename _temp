@@ -11,3 +11,33 @@ while my_name == "Matt":
   users_name = input("What is yours?")
   print("Nice to meet you, " + users_name)
   break
+
+# Lesson 1.4
+# Start by assigning a string to our variable.
+food = "bacon"
+
+# Let's see what the built-in `type()`function does.
+type_of_food = type(food)
+print(type_of_food)
+
+# We can access the characters of a string by index with bracket
+# notation, starting at index zero.
+first_letter = food[0]
+second_letter = food[1]
+print("The first letter is " + first_letter)
+print("The second letter is " + second_letter)
+
+# We can use the built-in `len()` function to get a string's
+# "length", or the number of characters it contains.
+print(len(food))
+
+# We can concatenate two strings together into one string with
+# the `+` operator.
+superfood = food + " and eggs"
+print("I like " + superfood)
+
+# We can fill in strings using the `.format()` string method.
+name = "Sash"
+cost = 3
+demand = "I'll take {} shrubberies, {}! Thanks!"
+print(demand.format(cost, name))
