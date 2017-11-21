@@ -12,6 +12,10 @@ while my_name == "Matt":
   print("Nice to meet you, " + users_name)
   break
 
+
+###############################################
+
+
 # Lesson 1.4
 # Start by assigning a string to our variable.
 food = "bacon"
@@ -41,3 +45,99 @@ name = "Sash"
 cost = 3
 demand = "I'll take {} shrubberies, {}! Thanks!"
 print(demand.format(cost, name))
+
+##############
+
+import random
+# Let's assign some variables to start with, including `None`
+# in a couple places.
+ 
+name = None
+species = "Human"
+weapon_of_choice = None
+
+num_list = []
+num_range = 50
+for num in range(num_range):
+  value = num + 1
+  num_list.append(value)
+#print(num_list)
+
+strength = random.choice(num_list)
+magic = random.choice(num_list)
+
+#def random_color():
+#    colors = ["blue", "octarine", "yellow", "red", "pink"]
+#    return random.choice(colors)
+#favorite_color = random_color()
+
+favorite_color = None
+profession = None
+
+# Hm, maybe we haven't assigned a name yet...
+if name is None:
+    name = input("What is your name?")
+    print("Fantastic, thanks {}!".format(name))
+
+# adding favorite color input
+if favorite_color is None:
+  favorite_color = input("What is your favorite color, {}?".format(name))
+
+# Every adventurer needs a profession.
+if profession is None:
+    print("{}, you are a {} who needs a profession".format(name, species))
+    print("Your strength is {} and magic is {},".format(strength, magic))
+    print("and your favorite color is {}".format(favorite_color))
+    profession = input("What profession would you like?")
+
+print("Welcome, {}. You are a {} {}.".format(name, species, profession))
+
+# Once you've run the program go back and tweak your starting
+# variables. Does that change the program's behavior?
+
+# As a stretch goal, try setting `favorite_color` to None and
+# getting user input by copying the logic for `name` and
+# `profession`.
+
+ 
+#################################################
+
+Lesson 1.5
+
+
+new_line = "\n"
+# Start by assigning some lists to variables.
+inventory = ["beans", "coin", "tome"]
+tome_dimensions = [8.5, 11, 2]
+
+# Lists in lists...
+random_stuff = [True, 3.14, ["pie", "pizza", "automobile"]]
+battleship_board = [[1, 1, 0], [1, 0, 1], [0, 0, 1]]
+
+# Just like with strings you can access list elements by index
+# with bracket notation. We start counting at zero:
+print(inventory[0])
+print(random_stuff[2])
+
+# With nested lists you can continue digging down with additional
+# indexes:
+print(random_stuff[2][0])
+
+# Lists have a particular length.
+inventory_size = len(inventory)
+print("You have {} items in your inventory".format(inventory_size))
+
+print(new_line)
+
+# Lists are easy to modify. We'll cover this in more detail later.
+inventory.append("magic sword")
+print("An item has been added to your inventory: \n" + str(inventory))
+print("New item count = {}".format(len(inventory)))
+
+# Can you think of a way to print 3.14 solely by referencing the
+# variables above?
+print(new_line)
+
+print("pi, rounded to 2 decimal places, is {}".format(random_stuff[1]))
+
+###############
