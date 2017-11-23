@@ -1,5 +1,3 @@
-# a work in progress
-
 Hello everyone!
 
 I've made this repository to hold some of the projects and things 
