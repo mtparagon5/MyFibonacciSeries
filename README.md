@@ -1,4 +1,4 @@
-# Thinkful
+# a work in progress
 
 Hello everyone!
 
