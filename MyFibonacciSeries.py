@@ -77,6 +77,9 @@ def display_fib_series(fib_numbers):
     # fibonacci numbers, print them to the user
     for nums in fib_numbers:
         print(nums)
+    # we'll ask for input so that if you're running it from the 
+    # command line it won't exit after executing the script
+    input("Press enter to exit...")
 
 # unlike the above example, here we won't see the out[]:
 # this is because our function has printed the list
