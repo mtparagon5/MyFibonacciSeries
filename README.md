@@ -1,5 +1,3 @@
-Hello everyone!
+# My Fibonacci Series
 
-I've made this repository to hold some of the projects and things 
-I work on or practice with while working through new skills in programming
-and data-science.
+This is my take on a program that will create a series of [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) based on user input.
